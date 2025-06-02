@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "You've Got Penalty",
+  "version": "1.0",
+  "description": "Better layout for koistudy.net",
+  "permissions": ["scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://koistudy.net/*"],
+      "js": ["content.js"],
+      "css": ["css/common.css", "bootstrap.min.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

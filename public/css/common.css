@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('./dark.css');
+
+.ec #header, .ec #body, .ec #footer {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    background-color: #242424 !important;
+    color: #d3d3d3 !important;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.nav-link {
+    --bs-nav-link-font-size: medium;
+}
+
+nav > .container-fluid {
+    max-width: 960px;
+}
+
+.navbar-wrapper {
+    background-color: #242424;
+    border-bottom: 1px solid #43494c;
+}
