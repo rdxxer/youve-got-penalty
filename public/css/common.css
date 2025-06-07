@@ -21,10 +21,6 @@ html, body {
     --bs-nav-link-font-size: medium;
 }
 
-nav > .container-fluid {
-    max-width: 960px;
-}
-
 .navbar-wrapper {
     background-color: #242424;
     border-bottom: 1px solid #43494c;
