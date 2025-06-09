@@ -14,8 +14,17 @@
     {
       "matches": ["*://koistudy.net/*"],
       "js": ["content.js"],
-      "css": ["css/common.css", "bootstrap.min.css"],
+      "css": ["css/common.css", "css/dark.css", "bootstrap.min.css"],
       "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["*://koistudy.net/*"],
+      "resources": [
+        "content/*.js",
+        "*.css"
+      ]
     }
   ]
 }

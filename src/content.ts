@@ -4,8 +4,14 @@ import common from './content/common.js'
 
 common()
 
-const mid: string = new URLSearchParams(window.location.search).get('mid') || ''
+const mid: string = new URLSearchParams(window.location.search).get('mid') || 'main'
+//const action: string = new URLSearchParams(window.location.search).get('action') || ''
 
-if (mid === '') {
-    import('./content/home.ts').then(m => m.run())
+switch (mid) {
+    case 'main':
+        import('./content/main.ts').then((m) => m.run())
+        break
+    case 'viewProblems':
+        import('./content/viewProblems.ts').then((m) => m.run())
+        break
 }

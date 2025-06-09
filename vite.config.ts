@@ -9,7 +9,8 @@ export default defineConfig({
         popup: 'src/popup.ts'
       },
       output: {
-        entryFileNames: '[name].js'
+        entryFileNames: '[name].js',
+        chunkFileNames: 'content/[name].js'
       }
     },
     outDir: 'dist',

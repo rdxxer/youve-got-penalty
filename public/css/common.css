@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('./dark.css');
+/*@import url('./dark.css');*/
 
 .ec #header, .ec #body, .ec #footer {
     display: none;
@@ -7,10 +7,26 @@
 
 html, body {
     height: 100%;
-    background-color: #242424 !important;
-    color: #d3d3d3 !important;
+    background-color: black !important;
+    color: white !important;
     margin: 0;
     padding: 0;
+}
+
+#container {
+    margin: 100px auto !important;
+}
+
+th {
+    text-align: center !important;
+}
+
+table {
+    font-size: 15px !important;
+}
+
+td, th {
+    padding: 12px !important;
 }
 
 * {
@@ -19,9 +35,4 @@ html, body {
 
 .nav-link {
     --bs-nav-link-font-size: medium;
-}
-
-.navbar-wrapper {
-    background-color: #242424;
-    border-bottom: 1px solid #43494c;
 }
