@@ -1,6 +1,7 @@
 * {
     --bs-table-color: white !important;
     --bs-table-bg: transparent !important;
+    --bs-nav-link-hover-color: #cfcfcf !important;
 }
 
 .navbar-wrapper {
@@ -8,6 +9,16 @@
     border-bottom: 1px solid #43494c;
 }
 
+.nav-item {
+    padding: 1px;
+}
+.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+    background-color: #383838 !important;
+}
+.active, .active:hover, .active:focus {
+    background: linear-gradient(120deg, #799df7, #8455f5) !important;
+    color: white !important;
+}
 
 table a {
    color: white !important;
@@ -25,11 +36,11 @@ table a:hover {
 }
 
 a.problem-ac {
-    color: green !important;
+    color: #009f6b !important;
     font-weight: bold !important;
 }
 a.problem-ac:hover {
-   color: green !important;
+   color: #009f6b !important;
    text-decoration: underline !important;
 }
 a.problem-wa {
@@ -38,4 +49,14 @@ a.problem-wa {
 a.problem-wa:hover {
    color: red !important;
    text-decoration: underline !important;
+}
+
+input[type="text"], input.form-control, input.form-control-sm {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid lightgray !important;
+}
+input[type="text"]::placeholder, input.form-control::placeholder, input.form-control-sm::placeholder {
+    color: white !important;
+    opacity: 0.5 !important;
 }
