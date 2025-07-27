@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-/*@import url('./dark.css');*/
 
-.ec #header, .ec #body, .ec #footer {
+.ec #header, .ec #body, .ec #footer, #waitingforserverresponse {
     display: none;
 }
 
@@ -34,5 +33,16 @@ td, th {
 }
 
 .nav-link {
-    --bs-nav-link-font-size: medium;
+    --bs-nav-link-font-size: medium !important;
+    padding: 10px 15px !important;
+}
+.nav-pills {
+    --bs-nav-pills-border-radius: 0 !important;
+}
+.nav-pills a {
+    --bs-nav-link-font-size: 13px !important;
+}
+
+input {
+    border-radius: 0 !important;
 }
